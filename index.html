@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vanu Verma - Software Engineer Portfolio and Resume">
+    <meta name="keywords" content="software engineer, portfolio, resume, developer">
+    <meta name="author" content="Vanu Verma">
+    <title>Vanu Verma - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Main Layout Container -->
+    <div class="resume-container">
+        <!-- Left Sidebar (Fixed) -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <!-- Profile Section -->
+                <div class="profile-section">
+                    <div class="profile-image" id="profileImage">
+                        <img class="profile-photo" id="profilePhoto" src="" alt="Profile" style="display: none;">
+                        <span class="profile-initials" id="profileInitials">VV</span>
+                    </div>
+                    <h1 class="profile-name" id="heroName">Vanu Verma</h1>
+                    <p class="profile-title" id="heroTitle">Software Engineer</p>
+                </div>
+
+                <!-- Summary Section -->
+                <div class="sidebar-section">
+                    <h2 class="sidebar-heading">Summary</h2>
+                    <div class="about-content" id="aboutText">
+                        <!-- Content loaded from data.json -->
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="sidebar-section">
+                    <h2 class="sidebar-heading">Skills</h2>
+                    <div id="skillsContainer">
+                        <!-- Content loaded from data.json -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Content Area (Scrollable) -->
+        <main class="main-content">
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <h2 class="content-heading">Professional Experience</h2>
+                <div class="experience-list" id="experienceTimeline">
+                    <!-- Content loaded from data.json -->
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <h2 class="content-heading">Projects</h2>
+                <div class="projects-list" id="projectsGrid">
+                    <!-- Content loaded from data.json -->
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="content-section">
+                <h2 class="content-heading">Education</h2>
+                <div id="educationList">
+                    <!-- Content loaded from data.json -->
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <h2 class="content-heading">Get In Touch</h2>
+                <div class="contact-list" id="contactMethods">
+                    <!-- Content loaded from data.json -->
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="main-footer">
+                <p>&copy; <span id="currentYear"></span> <span id="footerName">Vanu Verma</span>. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
