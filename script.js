@@ -5,16 +5,16 @@ async function loadData() {
     try {
         portfolioData = {
   "personal": {
-    "name": "Your Name",
-    "title": "Lead Developer",
-    "location": "Sydney, Australia",
+    "name": "Vanu Protap Verma",
+    "title": "Tech Lead | People Manager | Software Problem Solver | AI User",
+    "location": "Waitara, Sydney, Australia",
     "tagline": "Leading and managing teams to deliver exceptional software solutions",
     "profilePhoto": "",
     "social": {
-      "email": "your.email@example.com",
-      "linkedin": "https://linkedin.com/in/yourprofile",
-      "github": "https://github.com/yourusername",
-      "website": ""
+      "email": "contact.vanuverma@gmail.com",
+      "linkedin": "https://linkedin.com/in/vanuverma",
+      "github": "https://github.com/vanuverma",
+      "medium": ""
     }
   },
   "about": {
