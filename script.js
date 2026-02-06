@@ -63,7 +63,7 @@ async function loadData() {
             "CRM module improvement by leading a squad of 4 senior engineers, planning and delivering business-critical features to support daily operations.",
             "Finance module improvement by leading a squad of 4 senior engineers, planning and delivering integrations with NebuLAW (Salesforce), NAB DirectLink and Xero, for automated EFT approvals and transfers."
           ],
-          "detailPage": "project-caseplan.html"
+          "detailPage": ""
         }
       ]
     },
@@ -97,7 +97,7 @@ async function loadData() {
             "Reduced time frame of releasing a digitized credential from 6 months to a 2 weeks.",
             "Led a squad of 4 engineers for digitizing Working With Children Check and Covid certificate."
           ],
-          "detailPage": "project-digital-driver-licence.html"
+          "detailPage": "project-digital-licence-platform.html"
         },
         {
           "name": "Partner Management Portal",
@@ -116,7 +116,7 @@ async function loadData() {
             "Rewrote existing code to microservice architecture with increased test coverage from around 40% to over 90% prior to being transferred to the next project.",
             "Established seemless integration for sharing data between NSW Digital Licence Holders and participating RSL venues."
           ],
-          "detailPage": "project-partner-portal.html"
+          "detailPage": "project-partner-entitlement.html"
         },
         {
           "name": "Verifiable Credentials ecosystem",
@@ -151,7 +151,7 @@ async function loadData() {
             "Led cross-functional system architecture design and documentation for an in-house SaaS platform.",
             "Delivered a production-ready platform establishing connectivity between multiple participants."
           ],
-          "detailPage": "project-identity-conformance.html"
+          "detailPage": ""
         }
       ]
     }
