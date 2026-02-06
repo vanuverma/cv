@@ -3,382 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name - Digital Licence Platform</title>
+    <title>Digital Licence Platform - Project Details</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="project-detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Additional project-specific styles */
-        .project-header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            padding: 80px 20px 40px;
-            color: white;
-            text-align: center;
-        }
-        
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: white;
-            text-decoration: none;
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            opacity: 0.9;
-            transition: opacity 0.3s ease;
-        }
-        
-        .back-link:hover {
-            opacity: 1;
-        }
-        
-        .project-title-main {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        
-        .project-subtitle {
-            font-size: 1.2rem;
-            opacity: 0.95;
-            margin-bottom: 1.5rem;
-        }
-        
-        .project-meta {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            font-size: 0.95rem;
-        }
-        
-        .project-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-        
-        .section {
-            margin-bottom: 3rem;
-        }
-        
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--primary-color);
-        }
-        
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-bottom: 2rem;
-        }
-        
-        .tech-badge {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        
-        .content-text {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-        }
-        
-        .feature-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .feature-item {
-            background-color: var(--bg-secondary);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary-color);
-        }
-        
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .feature-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-        
-        .feature-description {
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-        
-        .highlight-box {
-            background-color: var(--bg-secondary);
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border-left: 4px solid var(--accent-color);
-        }
-        
-        .highlight-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-        }
-        
-        .bullet-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .bullet-list li {
-            padding-left: 1.5rem;
-            margin-bottom: 0.75rem;
-            position: relative;
-            line-height: 1.6;
-        }
-        
-        .bullet-list li:before {
-            content: "▸";
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-        
-        .link-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-        
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-        }
-        
-        .btn-secondary:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        @media (max-width: 768px) {
-            .project-title-main {
-                font-size: 2rem;
-            }
-            
-            .project-content {
-                padding: 2rem 1rem;
-            }
-            
-            .feature-list {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="themeToggle">
-        <i class="fas fa-moon"></i>
-    </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">← Back to Portfolio</a>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
 
     <!-- Project Header -->
-    <header class="project-header">
-        <a href="index.html" class="back-link">
-            <i class="fas fa-arrow-left"></i> Back to Portfolio
-        </a>
-        <h1 class="project-title-main">🚀 Project Name</h1>
-        <p class="project-subtitle">Brief tagline describing the project</p>
-        <div class="project-meta">
-            <span><i class="fas fa-calendar"></i> 2026</span>
-            <span><i class="fas fa-code"></i> Full Stack</span>
-            <span><i class="fas fa-users"></i> Team / Solo</span>
+    <section class="project-header">
+        <div class="container">
+            <h1 class="project-title-large">🪪 Digital Licence Platform</h1>
+            <p class="project-subtitle">Secure Mobile Driver's Licence Solution</p>
+            <div class="project-meta">
+                <span class="meta-item"><i class="fas fa-building"></i> Service NSW</span>
+                <span class="meta-item"><i class="fas fa-code"></i> Full Stack Platform</span>
+                <span class="meta-item"><i class="fas fa-shield-alt"></i> PKI Security</span>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Project Content -->
-    <div class="project-content">
-        
-        <!-- Overview Section -->
-        <section class="section">
+    <!-- Project Overview -->
+    <section class="section">
+        <div class="container">
             <h2 class="section-title">Overview</h2>
-            <p class="content-text">
-                Write a comprehensive overview of your project here. Explain what problem it solves, 
-                who the target users are, and what makes this project unique or interesting.
-            </p>
-            <p class="content-text">
-                Include the context of why this project was created, what motivated it, and what 
-                impact it has had or is expected to have.
-            </p>
-        </section>
+            <div class="content-section">
+                <p>A comprehensive digital licence platform that enables citizens to download, store, and verify their driver's licences directly on their mobile devices. The platform integrates with identity providers, implements cryptographic verification, and provides a secure QR code-based verification system.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Technology Stack -->
-        <section class="section">
+    <!-- Tech Stack -->
+    <section class="section section-alt">
+        <div class="container">
             <h2 class="section-title">Technology Stack</h2>
-            <div class="tech-stack">
-                <span class="tech-badge">Technology 1</span>
-                <span class="tech-badge">Technology 2</span>
-                <span class="tech-badge">Technology 3</span>
-                <span class="tech-badge">Technology 4</span>
-                <span class="tech-badge">Technology 5</span>
-                <span class="tech-badge">Technology 6</span>
+            <div class="tech-stack-grid">
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
+                    <ul>
+                        <li>Service NSW Mobile App</li>
+                        <li>QR Code Integration</li>
+                        <li>Secure Storage</li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-server"></i> Infrastructure</h3>
+                    <ul>
+                        <li>Kubernetes</li>
+                        <li>MongoDB Database</li>
+                        <li>License Issuer Service</li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-shield-alt"></i> Security</h3>
+                    <ul>
+                        <li>Auth0 Authentication</li>
+                        <li>PKI Encryption</li>
+                        <li>Cryptographic Verification</li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-check-circle"></i> Validation</h3>
+                    <ul>
+                        <li>Identity Validation Provider</li>
+                        <li>Platform Vendor Integration</li>
+                        <li>Real-time Verification</li>
+                    </ul>
+                </div>
             </div>
-            <p class="content-text">
-                Explain why you chose these technologies, what advantages they provided, 
-                and how they work together in your architecture.
-            </p>
-        </section>
+        </div>
+    </section>
 
-        <!-- Key Features -->
-        <section class="section">
+    <!-- Key Features -->
+    <section class="section">
+        <div class="container">
             <h2 class="section-title">Key Features</h2>
-            <div class="feature-list">
+            <div class="features-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">✨</div>
-                    <h3 class="feature-title">Feature Name 1</h3>
-                    <p class="feature-description">
-                        Describe this feature in detail. What does it do? How does it benefit users?
-                    </p>
+                    <div class="feature-icon">📥</div>
+                    <h3>Secure Download Flow</h3>
+                    <p>Users authenticate via Auth0, retrieve their licence data, and download encrypted credentials to their mobile app.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title">Feature Name 2</h3>
-                    <p class="feature-description">
-                        Describe this feature in detail. What does it do? How does it benefit users?
-                    </p>
+                    <div class="feature-icon">✅</div>
+                    <h3>Cryptographic Verification</h3>
+                    <p>PKI-based encryption and verification ensures licence authenticity when presented as QR codes.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">Feature Name 3</h3>
-                    <p class="feature-description">
-                        Describe this feature in detail. What does it do? How does it benefit users?
-                    </p>
+                    <div class="feature-icon">🔔</div>
+                    <h3>License Update Notifications</h3>
+                    <p>MongoDB-based notification system stores and sends licence update alerts to mobile users.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🔒</div>
-                    <h3 class="feature-title">Feature Name 4</h3>
-                    <p class="feature-description">
-                        Describe this feature in detail. What does it do? How does it benefit users?
-                    </p>
+                    <div class="feature-icon">☁️</div>
+                    <h3>Kubernetes Deployment</h3>
+                    <p>Scalable cloud infrastructure deployed on Kubernetes for high availability.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Technical Challenges -->
-        <section class="section">
-            <h2 class="section-title">Technical Challenges & Solutions</h2>
-            
-            <div class="highlight-box">
-                <h3 class="highlight-title">Challenge 1: Problem Description</h3>
-                <p class="content-text">
-                    Describe the technical challenge you faced in detail.
-                </p>
-                <p class="content-text">
-                    <strong>Solution:</strong> Explain how you solved this challenge, what approach 
-                    you took, and what technologies or techniques you used.
-                </p>
+    <!-- System Architecture -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">System Architecture</h2>
+            <div class="content-section">
+                <h3>Download Flow</h3>
+                <div class="architecture-diagram">
+                    <img src="images/Digital Licence Platform (Download flow).jpg" alt="Digital Licence Platform Download Flow" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                </div>
+                <ol class="architecture-list">
+                    <li><strong>User Authentication:</strong> Users login through Auth0 identity provider</li>
+                    <li><strong>Identity Validation:</strong> Platform vendor validates user credentials</li>
+                    <li><strong>Data Retrieval:</strong> Kubernetes-based platform retrieves licence data from backend systems</li>
+                    <li><strong>Licence Issuance:</strong> License Issuer service prepares the digital licence with PKI encryption</li>
+                    <li><strong>Notification Storage:</strong> License update notifications are stored in MongoDB database</li>
+                    <li><strong>Mobile Delivery:</strong> Encrypted licence data is delivered to Service NSW Mobile App</li>
+                </ol>
+
+                <h3>Verification Flow</h3>
+                <div class="architecture-diagram">
+                    <img src="images/Digital Licence Platform (Verify flow).jpg" alt="Digital Licence Platform Verify Flow" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                </div>
+                <ol class="architecture-list">
+                    <li><strong>User Authentication:</strong> User logs in via Auth0</li>
+                    <li><strong>QR Code Generation:</strong> Digital licence is presented as a QR code on mobile app</li>
+                    <li><strong>Verifier Scanning:</strong> External verifier scans the QR code</li>
+                    <li><strong>Cryptographic Validation:</strong> Platform performs PKI-based cryptographic verification</li>
+                    <li><strong>Response Delivery:</strong> Kubernetes cluster processes and returns verification response</li>
+                    <li><strong>Identity Confirmation:</strong> Validation provider confirms licence authenticity</li>
+                </ol>
             </div>
+        </div>
+    </section>
 
-            <div class="highlight-box">
-                <h3 class="highlight-title">Challenge 2: Problem Description</h3>
-                <p class="content-text">
-                    Describe another technical challenge you faced.
-                </p>
-                <p class="content-text">
-                    <strong>Solution:</strong> Explain your solution and the reasoning behind it.
-                </p>
+    <!-- Technical Highlights -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Highlights</h2>
+            <div class="challenges-list">
+                <div class="challenge-item">
+                    <h3>PKI-Based Security</h3>
+                    <p>Implemented Public Key Infrastructure for end-to-end encryption and cryptographic verification of digital licences.</p>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3>Kubernetes Orchestration</h3>
+                    <p>Deployed scalable microservices architecture on Kubernetes for handling high-volume licence operations.</p>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3>Multi-Provider Integration</h3>
+                    <p>Integrated with Auth0, identity validation providers, platform vendors, and PKI vendors for comprehensive security.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Results & Impact -->
-        <section class="section">
-            <h2 class="section-title">Results & Impact</h2>
-            <p class="content-text">
-                Share the outcomes of your project. Include metrics, user feedback, or business impact if available.
-            </p>
-            <ul class="bullet-list">
-                <li>Quantifiable result or achievement (e.g., "Improved performance by 50%")</li>
-                <li>User impact or adoption metrics (e.g., "Serving 10,000+ active users")</li>
-                <li>Business value or cost savings (e.g., "Reduced infrastructure costs by $X")</li>
-                <li>Technical improvements (e.g., "99.9% uptime maintained")</li>
-                <li>Personal learning or skills gained</li>
-            </ul>
-        </section>
-
-        <!-- Lessons Learned -->
-        <section class="section">
-            <h2 class="section-title">Key Takeaways</h2>
-            <p class="content-text">
-                Reflect on what you learned from this project:
-            </p>
-            <ul class="bullet-list">
-                <li>Technical skills or knowledge gained</li>
-                <li>Insights about project management or teamwork</li>
-                <li>What you would do differently next time</li>
-                <li>How this experience contributed to your professional growth</li>
-            </ul>
-        </section>
-
-        <!-- Links -->
-        <section class="section">
-            <h2 class="section-title">Project Links</h2>
-            <div class="link-buttons">
-                <a href="#" class="btn btn-primary" target="_blank">
-                    <i class="fab fa-github"></i> View Source Code
-                </a>
-                <a href="#" class="btn btn-primary" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="index.html" class="btn btn-secondary">
-                    <i class="fas fa-arrow-left"></i> Back to Portfolio
-                </a>
+    <!-- Results -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Impact</h2>
+            <div class="content-section">
+                <ul class="achievement-list">
+                    <li>Secure digital licence platform with PKI encryption and cryptographic verification</li>
+                    <li>Seamless integration with Service NSW mobile app for millions of users</li>
+                    <li>Real-time verification system with QR code presentation</li>
+                    <li>Scalable Kubernetes infrastructure with MongoDB notification system</li>
+                </ul>
             </div>
-        </section>
-
-    </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer style="text-align: center; padding: 2rem; color: var(--text-secondary); border-top: 1px solid var(--border-color);">
-        <p>&copy; <span id="currentYear"></span> Your Name. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Vanu Verma. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>

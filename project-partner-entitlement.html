@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Entitlement Verification - Project Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">← Back to Portfolio</a>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1 class="project-title-large">🎫 Partner Entitlement Verification</h1>
+            <p class="project-subtitle">Venue-Based Identity Verification System</p>
+            <div class="project-meta">
+                <span class="meta-item"><i class="fas fa-building"></i> Service NSW</span>
+                <span class="meta-item"><i class="fas fa-users"></i> Partner Integration</span>
+                <span class="meta-item"><i class="fas fa-qrcode"></i> QR Code System</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Overview</h2>
+            <div class="content-section">
+                <p>A partner entitlement verification system that enables venues (such as RSL clubs) to verify customer entitlements through QR code scanning. The platform allows venue partners to self-onboard, generate unique QR codes, and verify customer credentials with cryptographic security and user consent management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-stack-grid">
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-globe"></i> Partner Portal</h3>
+                    <ul>
+                        <li>Service NSW Partner Portal</li>
+                        <li>Self-Onboarding System</li>
+                        <li>QR Code Generator</li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <ul>
+                        <li>Digital License Platform</li>
+                        <li>Kubernetes Infrastructure</li>
+                        <li>MongoDB Database</li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-shield-alt"></i> Security</h3>
+                    <ul>
+                        <li>Auth0 Authentication</li>
+                        <li>PKI Vendor Integration</li>
+                        <li>Cryptographic Verification</li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
+                    <ul>
+                        <li>Service NSW Mobile App</li>
+                        <li>QR Code Scanner</li>
+                        <li>Consent Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🏢</div>
+                    <h3>Partner Self-Onboarding</h3>
+                    <p>Venues can register and onboard themselves through the Service NSW Partner Portal with validation.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔑</div>
+                    <h3>Unique Venue QR Codes</h3>
+                    <p>Each venue receives a unique QR code for customer verification with venue-specific configuration.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>Consent-Based Sharing</h3>
+                    <p>Customers must consent to share their licence data before verification proceeds.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Cryptographic Verification</h3>
+                    <p>PKI-based verification ensures secure validation of customer entitlements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">System Architecture</h2>
+            <div class="content-section">
+                <div class="architecture-diagram">
+                    <img src="images/Partner Entitlement Verification.jpg" alt="Partner Entitlement Verification Architecture" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                </div>
+                <h3>Partner Setup Flow</h3>
+                <ol class="architecture-list">
+                    <li><strong>Partner Registration:</strong> RSL club or venue user accesses Service NSW Partner Portal website</li>
+                    <li><strong>Authentication:</strong> Partner authenticates via Auth0 identity provider</li>
+                    <li><strong>Validation:</strong> System validates partner credentials and authorization</li>
+                    <li><strong>Self-Onboarding:</strong> Partner completes onboarding process on Digital License Platform</li>
+                    <li><strong>QR Code Generation:</strong> System generates unique QR code for the venue</li>
+                    <li><strong>Configuration Storage:</strong> Venue-specific config is stored in MongoDB database</li>
+                    <li><strong>QR Code Display:</strong> Partner portal displays QR code to visitors at venue</li>
+                </ol>
+
+                <h3>Customer Verification Flow</h3>
+                <ol class="architecture-list">
+                    <li><strong>QR Scan:</strong> Customer scans venue's unique QR code using Service NSW Mobile App</li>
+                    <li><strong>Config Retrieval:</strong> System retrieves venue-specific configuration from MongoDB via PROXY</li>
+                    <li><strong>User Consent:</strong> Customer is prompted to consent to share licence data</li>
+                    <li><strong>Data Transmission:</strong> Upon consent, licence data is sent to venue system</li>
+                    <li><strong>Cryptographic Validation:</strong> PKI vendor performs cryptographic verification</li>
+                    <li><strong>Verification Result:</strong> Kubernetes platform processes and returns verification result to partner</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Highlights -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Highlights</h2>
+            <div class="challenges-list">
+                <div class="challenge-item">
+                    <h3>Partner Portal Integration</h3>
+                    <p>Built self-service portal enabling venues to onboard, generate QR codes, and manage verification settings independently.</p>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3>Consent Management System</h3>
+                    <p>Implemented privacy-first consent flow ensuring customers explicitly authorize data sharing with venues.</p>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3>Venue-Specific Configuration</h3>
+                    <p>Designed flexible configuration system allowing unique QR codes and settings for each partner venue stored in MongoDB.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Impact</h2>
+            <div class="content-section">
+                <ul class="achievement-list">
+                    <li>Enabled venues like RSL clubs to verify customer entitlements digitally</li>
+                    <li>Self-service partner onboarding reduced administrative overhead</li>
+                    <li>Privacy-compliant consent system built on PKI cryptographic verification</li>
+                    <li>Scalable architecture supporting multiple venue partners with unique configurations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Vanu Verma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+
+        function setTheme(theme) {
+            htmlElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        setTheme(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const newTheme = htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
