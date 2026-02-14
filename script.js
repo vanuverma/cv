@@ -360,7 +360,7 @@ function populatePage() {
                                     ${project.image ? `<div class="experience-project-image"><img src="${project.image}" alt="${project.name}"></div>` : ''}
                                     <div class="experience-project-header">
                                         <h6 class="experience-project-name">${project.name}</h6>
-                                        ${project.detailPage ? `<a href="${project.detailPage}" class="experience-project-link" target="_blank">View Details →</a>` : ''}
+                                        ${project.detailPage ? `<a href="${project.detailPage}" class="experience-project-link" target="_self">View Details →</a>` : ''}
                                     </div>
                                     <p class="experience-project-description">${project.description}</p>
                                     <div class="experience-project-tech">
