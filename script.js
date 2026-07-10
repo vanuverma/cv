@@ -37,8 +37,8 @@ async function loadData() {
                     "Javascript"
                 ],
                 "highlights": [
-                    "CRM module improvement by leading a squad of 4 senior engineers, planning and delivering business-critical features to support daily operations.",
-                    "Finance module improvement by leading a squad of 4 senior engineers, planning and delivering integrations with NebuLAW (Salesforce), NAB DirectLink and Xero, for automated EFT approvals and transfers."
+                    "Automated emails sent to respective users on their related priority items.",
+                    "Automated report generation and distribution to respective users on scheduled interval/trigger."
                 ],
                 "detailPage": "project-business-communication-automation.html"
                 },
@@ -53,8 +53,8 @@ async function loadData() {
                     "SignalR"
                 ],
                 "highlights": [
-                    "Automated emails sent to respective users on their related priority items.",
-                    "Automated report generation and distribution to respective users on scheduled interval/trigger."
+                    "CRM module improvement by leading a squad of 4 senior engineers, planning and delivering business-critical features to support daily operations.",
+                    "Finance module improvement by leading a squad of 4 senior engineers, planning and delivering integrations with NebuLAW (Salesforce), NAB DirectLink and Xero, for automated EFT approvals and transfers."
                 ],
                 "detailPage": ""
                 },
